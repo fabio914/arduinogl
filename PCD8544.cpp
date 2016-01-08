@@ -1,5 +1,5 @@
 /*
-	PDC8544.cpp - Simple PDC8544 display controller.
+    PDC8544.cpp - Simple PDC8544 display controller.
  */
 
 #include "Arduino.h"

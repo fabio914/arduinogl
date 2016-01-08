@@ -1,5 +1,5 @@
 /*
-	ArduinoGL.h - OpenGL subset for Arduino.
+    ArduinoGL.h - OpenGL subset for Arduino.
     Created by Fabio de Albuquerque Dela Antonio
     fabio914 at gmail.com
  */

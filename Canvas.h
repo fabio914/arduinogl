@@ -1,5 +1,5 @@
 /*
-	Canvas.h - Simple canvas.
+    Canvas.h - Simple canvas.
  */
 
 #ifndef Canvas_h

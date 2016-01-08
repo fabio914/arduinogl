@@ -1,5 +1,5 @@
 /*
-	PDC8544.h - Simple PDC8544 display controller.
+    PDC8544.h - Simple PDC8544 display controller.
  */
 
 #ifndef PDC8544_h
