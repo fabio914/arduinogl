@@ -372,13 +372,15 @@ void glEnd(void) {
     if(glCanvas == NULL || glDrawMode == GL_NONE)
         return;
     
+    float modelviewProjection[16];
+    multMatrix(modelviewProjection, glMatrices[GL_PROJECTION], glMatrices[GL_MODELVIEW]);
+    
     int frameWidth = glCanvas->width();
     int frameHeight = glCanvas->height();
     
     for(int i = 0; i < glVerticesCount; i++) {
-        
-        GLVertex aux = multVertex(glMatrices[GL_MODELVIEW], glVertices[i]);
-        aux = multVertex(glMatrices[GL_PROJECTION], aux);
+
+        GLVertex aux = multVertex(modelviewProjection, glVertices[i]);
         
         aux.x = aux.x/aux.w;
         aux.y = aux.y/aux.w;
