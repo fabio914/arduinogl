@@ -5,7 +5,7 @@
  */
 
 #include "ArduinoGL.h"
-#define MAX_VERTICES 16
+#define MAX_VERTICES 24
 #define MAX_MATRICES 8
 
 #define DEG2RAD (M_PI/180.0)
