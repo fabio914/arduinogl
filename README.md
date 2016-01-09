@@ -20,7 +20,7 @@ Follow this [sparkfun guide](https://learn.sparkfun.com/tutorials/graphic-lcd-ho
 
 ## Installation
 
-Create an `ArduinoGL` directory inside your `~\Arduino\libraries\` directory, then copy all the contents of this repository to that new directory. After that you will be able to compile and run all the examples on the Arduino IDE.
+Create an `ArduinoGL` directory inside your `~/Arduino/libraries/` directory, then copy all the contents of this repository to that new directory. After that you will be able to compile and run all the examples on the Arduino IDE.
 
 ## Example
 
@@ -121,8 +121,8 @@ void loop() {
 
 You can use the `STL_converter` tool to convert any **small** STL model into a format that can be used with `ArduinoGL`. 
 
-<img src="/stanford_bunny.jpg?raw=true" width="200">
 *Stanford Bunny*
+<img src="/stanford_bunny.jpg?raw=true" width="200">
 
 ## Developer
 [Fabio de Albuquerque Dela Antonio](http://fabio914.blogspot.com)
