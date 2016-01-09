@@ -122,6 +122,7 @@ void loop() {
 You can use the `STL_converter` tool to convert any **small** STL model into a format that can be used with `ArduinoGL`. 
 
 <img src="/stanford_bunny.jpg?raw=true" width="200">
+*Stanford Bunny*
 
 ## Developer
 [Fabio de Albuquerque Dela Antonio](http://fabio914.blogspot.com)
