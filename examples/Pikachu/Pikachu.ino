@@ -79,7 +79,7 @@ void loop() {
   glClear(GL_COLOR_BUFFER_BIT); 
   
   glLoadIdentity();
-  gluLookAt(12, 14, -12, 0, 0, 0, 0, 1, 0);
+  gluLookAt(0, 0, -15, 0, 3, 0, 0, 1, 0);
   
   glScalef(0.1f, 0.1f, 0.1f);
   glRotatef(angle, 0.f, 1.f, 0.f);
