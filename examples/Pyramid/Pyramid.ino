@@ -49,30 +49,14 @@ void setup() {
 
 void drawPyramid() {
 
-  glBegin(GL_POLYGON);
+  /* 3 triangles instead of 4 */
+  glBegin(GL_TRIANGLE_STRIP);
     glVertex3f(-1, -1, -1);
     glVertex3f(1, -1, -1);
     glVertex3f(0, 1, 0);
-  glEnd();
-  
-  glBegin(GL_POLYGON);
-    glVertex3f(1, -1, -1);
-    glVertex3f(1, -1, 1);
-    glVertex3f(0, 1, 0);
-  glEnd();
-
-  glBegin(GL_POLYGON);
     glVertex3f(1, -1, 1);
     glVertex3f(-1, -1, 1);
-    glVertex3f(0, 1, 0);
   glEnd();
-
-  glBegin(GL_POLYGON);
-    glVertex3f(-1, -1, 1);
-    glVertex3f(-1, -1, -1);
-    glVertex3f(0, 1, 0);
-  glEnd();
-
   
   glBegin(GL_POLYGON);
     glVertex3f(-1, -1, 1);

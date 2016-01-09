@@ -13,7 +13,8 @@
 typedef enum {
     GL_NONE = 0,
     GL_POINTS,
-    GL_POLYGON
+    GL_POLYGON,
+    GL_TRIANGLE_STRIP
 } GLDrawMode;
 
 typedef enum {

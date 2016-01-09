@@ -438,4 +438,32 @@ void glEnd(void) {
             glCanvas->drawLine(px[i], py[i], px[next], py[next]);
         }
     }
+    
+    else if(glDrawMode == GL_TRIANGLE_STRIP) {
+        
+        /* TODO Improve! */
+        if(glVerticesCount < 3)
+            return;
+        
+        int px[MAX_VERTICES], py[MAX_VERTICES];
+        
+        for(int i = 0; i < glVerticesCount; i++) {
+            
+            if(!(glVertices[i].z >= -1.0 && glVertices[i].z <= 1.0))
+                return;
+            
+            GLVertex * aux = &(glVertices[i]);
+            
+            px[i] = (((aux->x + 1.0)/2.0) * (frameWidth - 1));
+            py[i] = ((1.0 - ((aux->y + 1.0)/2.0)) * (frameHeight - 1));
+        }
+        
+        for(int i = 0; i < glVerticesCount - 2; i++) {
+            
+            glCanvas->drawLine(px[i], py[i], px[i + 1], py[i + 1]);
+            glCanvas->drawLine(px[i], py[i], px[i + 2], py[i + 2]);
+            glCanvas->drawLine(px[i + 1], py[i + 1], px[i + 2], py[i + 2]);
+            
+        }
+    }
 }
