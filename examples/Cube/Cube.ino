@@ -41,8 +41,8 @@ void setup() {
   glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
 
-  /* TODO: Use perspective projection! */
-  glOrtho(-5, 5, -5, 5, 0.1, 999.f);
+//  glOrtho(-5, 5, -5, 5, 0.1, 999.f);
+  gluPerspective(30.0, c.width()/c.height(), 0.1f, 9999.f);
     
   glMatrixMode(GL_MODELVIEW);
 }
@@ -96,8 +96,7 @@ void loop() {
 
   /* Read the rotation angle from a potentiometer attached to pin A0 */
   float angle = analogRead(0)/1024.f * 360.f;
-  
-  static float scale = 3.0;
+  const float scale = 2.5;
 
   glClear(GL_COLOR_BUFFER_BIT); 
   
@@ -114,4 +113,3 @@ void loop() {
   
   delay(1);
 }
-
